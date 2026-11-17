@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer"><meta name="description" content="Review your custom sign and try simulated UPI, card or bank transfer checkout."><meta property="og:title" content="Sign Checkout Demo | Brand Pulse Creatives"><meta property="og:description" content="Review your custom sign and try simulated UPI, card or bank transfer checkout."><meta name="theme-color" content="#171814"><title>Sign Checkout Demo | Brand Pulse Creatives</title><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="commerce.css"></head><body><a class="skip" href="#main">Skip to content</a><header><div class="wrap nav"><a class="brand" href="index.html"><b aria-hidden="true">◒</b><span>BRAND PULSE<small>CREATIVES</small></span></a><nav aria-label="Main"><a href="services.html">Services</a><a href="studio.html">Capabilities</a><a href="purchase.html" aria-current="page">Order signs</a><a href="contact.html">Contact</a></nav><a class="cta" href="sign-design.html">Design a sign <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="wrap commerce-heading purchase-heading">
+  <a class="commerce-back" id="back-design" href="sign-design.html">← Sign designer</a>
+  <div class="commerce-heading-row">
+    <div><h1>Review your sign.</h1></div>
+    <p>Confirm the design, set a quantity and try checkout with sample prices.</p>
+  </div>
+</section>
+<section class="wrap purchase-layout">
+  <div class="purchase-main">
+    <form id="purchase-form">
+      <section class="shop-card purchase-item" aria-labelledby="design-title">
+        <div class="shop-card-head">
+          <h2 id="design-title">Your custom sign</h2>
+          <a class="shop-link" id="edit-design" href="sign-design.html">Edit design</a>
+        </div>
+        <div class="checkout-product">
+          <figure class="item-preview">
+            <canvas id="order-preview" width="720" height="480" role="img" aria-label="Preview of the sign to order"></canvas>
+            <figcaption id="order-photo-note">Illustrative mockup</figcaption>
+          </figure>
+          <div>
+            <p class="product-wording" id="product-wording">MORROW COFFEE</p>
+            <p class="quiet" id="product-spec"></p>
+            <div class="shop-fields order-fields">
+              <label>Sign style<select name="type" id="purchase-type"></select></label>
+              <label>Quantity<input name="quantity" id="order-quantity" type="number" min="1" max="25" step="1" value="1" inputmode="numeric" required></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-card payment-card" aria-labelledby="payment-title">
+        <h2 id="payment-title">Choose a payment option</h2>
+        <p class="quiet">Demo checkout uses no payment credentials.</p>
+        <fieldset class="payment-methods">
+          <legend class="visually-hidden">Payment method</legend>
+          <label class="payment-choice"><input type="radio" name="method" value="upi" checked><span><strong>UPI</strong><small>UPI app or QR</small></span><span class="method-icon" aria-hidden="true">⇄</span></label>
+          <label class="payment-choice"><input type="radio" name="method" value="card"><span><strong>Card</strong><small>Debit or credit</small></span><span class="method-icon" aria-hidden="true">▱</span></label>
+          <label class="payment-choice"><input type="radio" name="method" value="bank"><span><strong>Bank transfer</strong><small>Business payment</small></span><span class="method-icon" aria-hidden="true">⌂</span></label>
+        </fieldset>
+        <div class="payment-detail" data-method="upi">
+          <div class="qr-placeholder" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div><h3>UPI checkout preview</h3><p>Sample QR. Live checkout could open a UPI app or display a scannable payment code.</p></div>
+        </div>
+        <div class="payment-detail" data-method="card" hidden>
+          <div><h3>Card checkout preview</h3><p>A connected checkout would use the payment provider’s secure card form.</p></div>
+        </div>
+        <div class="payment-detail" data-method="bank" hidden>
+          <div><h3>Bank transfer preview</h3><p>Approved beneficiary details and an order reference would appear on a live invoice.</p></div>
+        </div>
+      </section>
+    </form>
+    <section class="shop-card order-confirmation" id="order-confirmation" aria-labelledby="order-confirm-title" hidden>
+      <p class="eyebrow" id="order-reference"></p><h2 id="order-confirm-title" tabindex="-1">Demo order saved.</h2>
+      <p id="order-result"></p>
+      <dl class="order-breakdown" id="saved-order-lines"></dl>
+      <p class="quiet">Your demo order stays in this browser. No payment or order was sent.</p>
+      <div class="actions"><a class="cta" id="confirm-quote" href="estimate.html">Request a project estimate</a><button type="button" class="shop-secondary" id="print-order">Print order summary</button><button class="shop-link" type="button" id="retry-order">Return to checkout</button></div>
+    </section>
+  </div>
+  <aside class="shop-card order-summary" aria-labelledby="order-summary-title">
+    <h2 id="order-summary-title">Order summary</h2>
+    <dl class="order-breakdown">
+      <div><dt>Unit price (sample)</dt><dd id="order-unit"></dd></div>
+      <div><dt>Quantity</dt><dd id="order-count"></dd></div>
+      <div><dt>Delivery &amp; installation</dt><dd>Quoted separately</dd></div>
+    </dl>
+    <div class="summary-total"><span>Sample subtotal</span><strong id="order-total" aria-live="polite"></strong></div>
+    <div class="payable"><span>Due in this demo</span><strong>₹0</strong></div>
+    <button class="cta shop-primary" id="save-order" form="purchase-form" type="submit">Simulate checkout <span aria-hidden="true">↗</span></button>
+    <a class="shop-link quote-link" id="order-quote" href="estimate.html?service=storefront">Need an installation quote?</a>
+  </aside>
+</section>
+<noscript><p class="wrap">Enable JavaScript to customize an order and try checkout.</p></noscript>
+
+<script defer src="sign-options.js"></script><script defer src="preview-assets.js"></script><script defer src="sign-renderer.js"></script><script defer src="purchase.js"></script></main><footer><div class="wrap footer"><a class="brand" href="index.html"><b aria-hidden="true">◒</b><span>BRAND PULSE<small>CREATIVES</small></span></a><p>Signage &amp; retail branding<br>Greater Noida, Uttar Pradesh</p><div><a href="services.html">Services</a><a href="sign-design.html">Design a sign</a><a href="purchase.html">Order signs</a><a href="contact.html">Contact</a></div><small>Independent website demo</small></div></footer></body></html>
