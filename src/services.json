@@ -1,0 +1,62 @@
+[
+  {
+    "id": "storefront",
+    "group": "Signage",
+    "name": "Storefront signage",
+    "art": "SHOPFRONT",
+    "style": "storefront",
+    "blurb": "Exterior signs and business identification for shops, cafés and restaurants.",
+    "detail": "For a new storefront or a fascia refresh. Share the business name or logo, the sign position and how it needs to read from the street.",
+    "asks": [
+      "Approximate fascia width and height",
+      "Mounting surface and floor level",
+      "Daytime or after-dark visibility"
+    ],
+    "sign": true
+  },
+  {
+    "id": "neon",
+    "group": "Signage",
+    "name": "Neon signage",
+    "art": "open late",
+    "style": "neon",
+    "blurb": "Illuminated lettering and motifs for visible walls, counters or storefronts.",
+    "detail": "Use a short phrase, logo or motif as a focal point. Tell the team where the sign will sit and how far away people need to read it.",
+    "asks": [
+      "Exact wording or shape",
+      "Preferred colour and approximate size",
+      "Indoor or outdoor placement"
+    ],
+    "sign": true
+  },
+  {
+    "id": "branding",
+    "group": "Branding",
+    "name": "In-store branding",
+    "art": "IN STORE",
+    "style": "branding",
+    "blurb": "Branded elements for customer-facing areas inside retail and F&B spaces.",
+    "detail": "Refresh an existing store or plan branding for a new one. Identify the surfaces and areas you want to brand so the enquiry can be scoped by zone.",
+    "asks": [
+      "Surfaces and store zones",
+      "Brand guidelines or artwork status",
+      "One location or a rollout"
+    ],
+    "sign": false
+  },
+  {
+    "id": "retail",
+    "group": "Fit-outs",
+    "name": "Retail & F&B fit-outs",
+    "art": "RETAIL SPACE",
+    "style": "retail",
+    "blurb": "Retail environments and turnkey work for new sites and brand refreshes.",
+    "detail": "For a store launch or refurbishment, describe the space and what needs to be ready by opening day. Include multiple sites if they share a common scope.",
+    "asks": [
+      "Site locality and approximate floor area",
+      "Site stage and intended opening date",
+      "Scope and number of locations"
+    ],
+    "sign": false
+  }
+]

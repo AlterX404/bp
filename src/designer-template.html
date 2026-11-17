@@ -1,0 +1,69 @@
+<section class="wrap commerce-heading">
+  <a class="commerce-back" href="services.html">← Services</a>
+  <div class="commerce-heading-row">
+    <div><h1>See your sign in place.</h1></div>
+    <p>Try your lettering on a sample storefront or a photo of your own shop.</p>
+  </div>
+</section>
+<section class="wrap designer-layout">
+  <div class="designer-stage">
+    <div class="stage-toolbar">
+      <div class="scene-switch" aria-label="Preview scene">
+        <button type="button" data-scene="street" aria-pressed="true">Shopfront</button>
+        <button type="button" data-scene="reception" aria-pressed="false">Reception</button>
+        <button type="button" data-scene="photo" aria-pressed="false" hidden>Your photo</button>
+      </div>
+      <fieldset class="light-switch">
+        <legend class="visually-hidden">Preview lighting</legend>
+        <label><input type="radio" name="lighting" value="day" checked><span>Day</span></label>
+        <label><input type="radio" name="lighting" value="night"><span>Night</span></label>
+      </fieldset>
+    </div>
+    <figure class="preview-figure">
+      <canvas id="sign-preview" width="1200" height="800" role="img" aria-label="Custom sign on a sample shopfront">Your sign details are available in the form below.</canvas>
+      <figcaption id="scene-caption">Illustrative shopfront · approximate sign scale</figcaption>
+    </figure>
+    <div class="stage-footer">
+      <label class="photo-button"><span aria-hidden="true">＋</span> Use your shop photo
+        <input id="shop-photo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="photo-help">
+      </label>
+      <button type="button" class="shop-secondary" id="download-preview">Download mockup</button>
+    </div>
+    <p class="quiet photo-help" id="photo-help">JPG, PNG or WebP up to 12 MB. Photos stay in this browser tab.</p>
+    <p class="quiet preview-message" id="preview-message" role="status" hidden></p>
+  </div>
+  <form class="shop-card designer-controls" id="design-controls">
+    <div class="shop-card-head">
+      <div><p class="eyebrow">YOUR SIGN</p><h2>Make it yours.</h2></div>
+      <button class="shop-link" id="reset-design" type="button">Reset design</button>
+    </div>
+    <label for="wording">Shop name or sign wording</label>
+    <input id="wording" name="wording" maxlength="36" required value="MORROW COFFEE" aria-describedby="word-count">
+    <p id="word-count" class="quiet char-count">13 / 36 characters</p>
+    <div class="shop-fields">
+      <label>Sign style<select id="sign-type" name="type"></select></label>
+      <label>Lettering<select id="sign-font" name="font"></select></label>
+    </div>
+    <p id="type-detail" class="quiet type-detail"></p>
+    <fieldset class="colour-field">
+      <legend>Letter colour <span class="quiet" id="colour-name"></span></legend>
+      <div class="colour-options" id="colour-options"></div>
+    </fieldset>
+    <div class="shop-fields">
+      <label>Width (ft)<input name="width" type="number" min="2" max="12" step="0.5" value="6" inputmode="decimal" required></label>
+      <label>Height (ft)<input name="height" type="number" min="0.5" max="4" step="0.5" value="1.5" inputmode="decimal" required></label>
+    </div>
+    <details class="position-controls">
+      <summary>Adjust sign position</summary>
+      <p class="quiet">Tap the image to reposition the sign, or use the sliders.</p>
+      <label>Horizontal position<input name="x" type="range" min="5" max="95" value="50"></label>
+      <label>Vertical position<input name="y" type="range" min="5" max="95" value="25"></label>
+      <button class="shop-link" type="button" id="reset-position">Reset position</button>
+    </details>
+    <div class="design-total"><div><span>Sample price per sign</span><small>Illustrative pricing</small></div><strong id="design-price">₹10,400</strong></div>
+    <button class="cta shop-primary" type="submit">Continue to checkout <span aria-hidden="true">↗</span></button>
+    <a class="shop-link quote-link" id="quote-design" href="estimate.html?service=storefront">Request an estimate with this design</a>
+  </form>
+</section>
+<noscript><p class="wrap">Enable JavaScript to use the custom sign designer.</p></noscript>
+

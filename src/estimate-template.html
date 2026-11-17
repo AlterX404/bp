@@ -1,0 +1,22 @@
+<div class="flow" id="estimate"><p class="notice">Private demo. Requests stay in this browser session. Use sample contact details.</p>
+<p class="sign-brief" id="design-brief-summary" hidden></p>
+<ol class="steps" aria-label="Estimate progress"><li aria-current="step">Project</li><li>Scope</li><li>Review</li></ol><form id="brief" novalidate><p id="formError" class="error" role="alert" hidden></p>
+<div id="first"><h3 tabindex="-1">1. Project basics</h3><div class="fields">
+<label class="full">Service <select name="service" required></select></label>
+<label class="full">Project locality or PIN code <input name="locality" maxlength="120" required placeholder="e.g. Greater Noida West"></label>
+</div><div class="actions"><button class="button" type="button" id="next">Continue</button></div></div>
+<div id="second" hidden><h3 tabindex="-1">2. Scope and contact</h3><div class="fields">
+<label data-sign>Placement <select name="placement"><option value="">Select if known</option><option>Indoor</option><option>Outdoor</option><option>Both</option></select></label>
+<label data-sign>Approx. dimensions <input name="dimensions" maxlength="120" placeholder="e.g. 8 × 2 ft"></label>
+<label data-sign>Material or finish preference <input name="material" maxlength="120" placeholder="If known"></label>
+<label>Signs or locations <input name="quantity" type="number" inputmode="numeric" min="1" max="100000" step="1" placeholder="e.g. 2"></label>
+<label>Installation needed? <select name="installation"><option value="">Select if known</option><option>Yes</option><option>No</option><option>Help me decide</option></select></label>
+<label>Needed by <input type="date" name="date"></label>
+<label class="full" id="notesLabel"><span>Project details</span><textarea name="notes" rows="3" maxlength="1000"></textarea></label>
+<label>Your name <input name="name" maxlength="100" autocomplete="name" required></label>
+<label>Email <input name="email" type="email" maxlength="200" autocomplete="email" required></label>
+<label class="full">Business name <input name="business" maxlength="120" autocomplete="organization"></label>
+</div><div class="actions"><button type="button" class="button outline" data-back="first">Back</button><button type="submit" class="button">Review enquiry</button></div></div></form>
+<div id="review" hidden><h3 tabindex="-1">3. Review your enquiry</h3><p class="hint">This is the exact brief the sales team would see in a connected version.</p><pre class="summary" id="reviewText"></pre><div class="actions"><button id="edit" class="button outline" type="button">Edit details</button><button id="save" class="button" type="button">Save demo enquiry</button></div></div>
+<div id="done" hidden><h3 tabindex="-1" id="doneTitle"></h3><p class="hint" id="doneMessage"></p><pre class="summary" id="doneText"></pre><div class="actions"><button id="again" class="button outline" type="button">Start another enquiry</button></div></div>
+</div>
